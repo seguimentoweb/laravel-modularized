@@ -144,6 +144,9 @@ return [
         App\Core\Providers\AuthServiceProvider::class,
         App\Core\Providers\EventServiceProvider::class,
         App\Core\Providers\RouteServiceProvider::class,
+        App\Core\Providers\ViewServiceProvider::class,
+        # Front
+        App\Front\Providers\FrontServiceProvider::class,
     ],
 
     /*

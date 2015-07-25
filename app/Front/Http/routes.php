@@ -1,8 +1,7 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Front Application Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register all of the routes for an application.
@@ -10,3 +9,5 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
