@@ -30,7 +30,7 @@ class PanelServiceProvider extends ServiceProvider
 
     protected function routes(Router $route)
     {
-        $route->group(['namespace' => 'App\Panel\Http\Controllers'], function () {
+        $route->group(['namespace' => 'App\Panel\Http\Controllers','prefix'=>'panel'], function () {
             return require app_path('Panel/Http/routes.php');
         });
     }
