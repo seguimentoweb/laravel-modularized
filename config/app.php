@@ -147,6 +147,7 @@ return [
         App\Core\Providers\ViewServiceProvider::class,
         # Front
         App\Front\Providers\FrontServiceProvider::class,
+        App\Panel\Providers\PanelServiceProvider::class,
     ],
 
     /*
