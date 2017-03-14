@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Front\Http\Controllers;
+namespace App\Panel\Http\Controllers;
 
 class PagesController extends BaseController
 {
@@ -9,6 +9,7 @@ class PagesController extends BaseController
      */
     public function home()
     {
-        return $this->view('front::pages.home');
+
+        return $this->view('panel::pages.home');
     }
 }
