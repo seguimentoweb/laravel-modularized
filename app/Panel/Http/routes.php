@@ -14,6 +14,4 @@
 |
 */
 
-Route::get('/something',function(){
-echo "You are in module panel! Its amazing!";
-});
+Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
