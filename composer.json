@@ -4,6 +4,16 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "authors": [
+		{
+			"name": "Vinicius Reis",
+			"email": "luiz.vinicius73@gmail.com"
+		},
+        {
+			"name": "Euller Cristian",
+			"email": "eullercdr@gmail.com"
+		}
+	],
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*"
