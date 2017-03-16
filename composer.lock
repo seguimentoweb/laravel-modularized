@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d69bf8c6839ea848ad0f781f87de8fa",
+    "content-hash": "7e0eb0193352eb31b8134591494fabed",
     "packages": [
         {
             "name": "artesaos/defender",
@@ -283,6 +283,48 @@
                 }
             ],
             "time": "2016-06-13T19:28:20+00:00"
+        },
+        {
+            "name": "bestmomo/scafold",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bestmomo/scafold.git",
+                "reference": "0d9dcf8b1d11981cdd67efe064de49255aa44c9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bestmomo/scafold/zipball/0d9dcf8b1d11981cdd67efe064de49255aa44c9a",
+                "reference": "0d9dcf8b1d11981cdd67efe064de49255aa44c9a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bestmomo\\Scafold\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Bestmomo",
+                    "email": "grandheretique@free.fr"
+                }
+            ],
+            "description": "To add scafold to Laravel 5.1",
+            "homepage": "http://github.com/bestmomo/scafold",
+            "time": "2016-10-05T08:03:35+00:00"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -1774,16 +1816,16 @@
         },
         {
             "name": "prettus/l5-repository",
-            "version": "2.6.16",
+            "version": "2.6.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersao/l5-repository.git",
-                "reference": "f509a51e9f3933dcd4d99ce11f4ac8688df5eba2"
+                "reference": "12aadec101505d4f8892ae0257818c63f0a28b6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/f509a51e9f3933dcd4d99ce11f4ac8688df5eba2",
-                "reference": "f509a51e9f3933dcd4d99ce11f4ac8688df5eba2",
+                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/12aadec101505d4f8892ae0257818c63f0a28b6e",
+                "reference": "12aadec101505d4f8892ae0257818c63f0a28b6e",
                 "shasum": ""
             },
             "require": {
@@ -1830,7 +1872,7 @@
                 "model",
                 "repository"
             ],
-            "time": "2017-03-13T23:07:29+00:00"
+            "time": "2017-03-15T14:41:04+00:00"
         },
         {
             "name": "prettus/laravel-validation",
@@ -4682,7 +4724,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bestmomo/scafold": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -152,6 +152,11 @@ return [
 
 
         /*
+         * Support Service Providers...
+         */
+        //App\Support\SupportServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Core\Providers\CoreServiceProvider::class,
@@ -159,9 +164,9 @@ return [
         App\Core\Providers\EventServiceProvider::class,
         App\Core\Providers\RouteServiceProvider::class,
         App\Core\Providers\ViewServiceProvider::class,
-        # Front
-        App\Front\Providers\FrontServiceProvider::class,
-        App\Panel\Providers\PanelServiceProvider::class,
+        App\Units\Front\Providers\FrontServiceProvider::class,
+        App\Units\Panel\Providers\PanelServiceProvider::class,
+        App\Units\Auth\Providers\AuthServiceProvider::class,
     ],
 
     /*
