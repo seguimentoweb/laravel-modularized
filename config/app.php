@@ -138,6 +138,25 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Package Service Providers...
+         */
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        OwenIt\Auditing\AuditingServiceProvider::class,
+        Artesaos\Defender\Providers\DefenderServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        KennedyTedesco\Validation\ValidationServiceProvider::class,
+
+
+        /*
+         * Support Service Providers...
+         */
+        //App\Support\SupportServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Core\Providers\CoreServiceProvider::class,
@@ -145,9 +164,9 @@ return [
         App\Core\Providers\EventServiceProvider::class,
         App\Core\Providers\RouteServiceProvider::class,
         App\Core\Providers\ViewServiceProvider::class,
-        # Front
-        App\Front\Providers\FrontServiceProvider::class,
-        App\Panel\Providers\PanelServiceProvider::class,
+        App\Units\Front\Providers\FrontServiceProvider::class,
+        App\Units\Panel\Providers\PanelServiceProvider::class,
+        App\Units\Auth\Providers\AuthServiceProvider::class,
     ],
 
     /*
@@ -196,6 +215,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Defender' => Artesaos\Defender\Facades\Defender::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class
 
     ],
 
